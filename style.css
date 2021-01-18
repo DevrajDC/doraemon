@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.doraemon {
+  background: #1e96d5;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border: 2px solid black;
+}
+.doraemon .head .eyes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 82px;
+  z-index: 10;
+}
+.doraemon .head .eyes .left,
+.right {
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #fff;
+  position: relative;
+}
+.doraemon .head .eyes .eyeball-left {
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.doraemon .head .eyes .eyeball-right {
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.doraemon .head .nose {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 125px;
+  left: 129px;
+  z-index: 20;
+  border: 2px solid black;
+}
+.doraemon .head .nose .nose-highlight {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 30;
+}
+
+.doraemon .head .face {
+  background-color: #fff;
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.doraemon .head .face .center-line {
+  background-color: #fff;
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  top: 90px;
+  left: 62px;
+  border-top: 2px solid black;
+  transform: rotate(90deg);
+}
+
+.doraemon .head .face .moustache {
+  width: 175px;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 20px;
+  left: 20px;
+}
+.doraemon .head .face .moustache .left-moustache {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doraemon .head .face .moustache .left-moustache .line-1 {
+  border-top: 2px solid black;
+  width: 100%;
+  height: 1px;
+  transform: rotate(10deg);
+}
+.doraemon .head .face .moustache .left-moustache .line-2 {
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 10px 0;
+  height: 1px;
+}
+.doraemon .head .face .moustache .left-moustache .line-3 {
+  border-top: 2px solid black;
+  width: 100%;
+  height: 1px;
+  transform: rotate(-10deg);
+}
+.doraemon .head .face .moustache .right-moustache {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doraemon .head .face .moustache .right-moustache .line-1 {
+  border-top: 2px solid black;
+  width: 100%;
+  height: 1px;
+  transform: rotate(-10deg);
+}
+.doraemon .head .face .moustache .right-moustache .line-2 {
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 10px 0;
+  height: 1px;
+}
+.doraemon .head .face .moustache .right-moustache .line-3 {
+  border-top: 2px solid black;
+  width: 100%;
+  height: 1px;
+  transform: rotate(10deg);
+}
+.doraemon .head .mouth {
+  position: absolute;
+  background-color: #ce1613;
+  width: 150px;
+  height: 80px;
+  top: 100px;
+  left: 30px;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px 20px 150px 150px;
+}
+.doraemon .head .face .mouth .tongue {
+  position: absolute;
+  background-color: #ec130f;
+  width: 100px;
+  height: 50px;
+  top: 30px;
+  left: 20px;
+  border: 1px solid black;
+  border-radius: 150px 150px 0 0;
+}
